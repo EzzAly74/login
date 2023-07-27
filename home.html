@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      nav {
+        box-shadow: 2px -2px 18px #222;
+      }
+      a {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .welcome {
+        box-shadow: 2px -2px 28px #222;
+        padding: 30px;
+        width: 600px;
+      }
+      @media (max-width: 991px) {
+        .welcome {
+          width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div
+        class="container d-flex align-items-center justify-content-between px-5 py-3"
+      >
+        <a href="#" class="text-decoration-none">SMART LOGIN </a>
+        <button class="btn btn-outline-warning" id="logout">Logout</button>
+      </div>
+    </nav>
+    <div class="welcome position-absolute top-50 start-50 translate-middle">
+      <h1 class="text-center">Welcome <span>User Name</span></h1>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
